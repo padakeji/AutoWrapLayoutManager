@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import com.padakeji.android.ui.AutoWrapLayoutManager;
+import com.padakeji.android.ui.widget.AutoWrapLayoutManager;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

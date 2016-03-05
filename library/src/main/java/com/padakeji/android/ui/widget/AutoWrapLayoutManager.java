@@ -1,4 +1,4 @@
-package com.padakeji.android.ui;
+package com.padakeji.android.ui.widget;
 
 import android.content.Context;
 import android.graphics.Rect;
