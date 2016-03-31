@@ -8,8 +8,6 @@ import android.util.SparseArray;
 import android.view.View;
 
 /**
- * 一个水平方向自动换行的布局管理器。
- *
  * Created by atanl on 2015/12/12.
  */
 public class AutoWrapLayoutManager extends RecyclerView.LayoutManager {
@@ -53,7 +51,6 @@ public class AutoWrapLayoutManager extends RecyclerView.LayoutManager {
 
         switch (widthMode) {
             case View.MeasureSpec.UNSPECIFIED:
-                // TODO 这种情况还没有做处理。但是一般不会出现，只有当RecyclerView处于HorizontalScrollView中才会出现。
                 Log.d(TAG, "WidthMode is unspecified.");
                 break;
         }
@@ -140,7 +137,6 @@ public class AutoWrapLayoutManager extends RecyclerView.LayoutManager {
 
     @Override
     public boolean canScrollHorizontally() {
-        // 用于hack getChildMeasureSpec方法。
         return true;
     }
 

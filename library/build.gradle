@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 23
@@ -21,6 +22,16 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.2.0'
-    compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+}
+
+
+publish {
+    userOrg = 'atanl'
+    groupId = 'com.padakeji.android'
+    artifactId = 'autowrapperlayoutmanager'
+    publishVersion = '0.1.1'
+    desc = 'It\'s a very simple and rough implement of LayoutManager'
+    website = 'https://github.com/padakeji/AutoWrapLayoutManager'
 }
